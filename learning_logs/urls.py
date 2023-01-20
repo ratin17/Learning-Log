@@ -8,4 +8,12 @@ urlpatterns = [
 # Home page
 path('', views.index, name='index'),
 
+#Topic Page
+path('topics/', views.topics, name='topics'),
+
+#Individual Topic
+path('topics/<int:topic_id>/', views.topic, name='topic'),
+
+
+
 ]
